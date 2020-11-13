@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.display_cards {
+    cursor: pointer;
+}
+
+.registered {
+    color: #67c23a;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.value {
+    color: #a6a9ad;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+    display: none !important;
+}
+
+button:focus {
+    outline: 0;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+.form-control {
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 30px;
+    border: none;
+    padding: 1.375rem 1.75rem;
+}
+
+.form-control:focus {
+    border: 1px solid #223744;
+    border-color: #223744;
+    box-shadow: none;
+}
+
+.main {
+    background: #fbfbfd;
+    height: calc(100vh - 72px);
+    overflow-y: scroll;
+}
+
+.border_bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #223744;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 60px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
