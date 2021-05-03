@@ -21,7 +21,7 @@
             <input
               type="text"
               class="location-control"
-              v-model="location"
+             :value="location"
               readonly
             />
             <button type="button" class="copy-btn" @click="copyLocation">
