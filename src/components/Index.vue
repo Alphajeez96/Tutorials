@@ -32,7 +32,7 @@
           <button
             type="button"
             :disabled="loading"
-            :class="{ disabled: loading == true }"
+            :class="{ disabled: loading}"
             class="location-btn"
             @click="getLocation"
           >
@@ -116,7 +116,7 @@ export default {
       }
     },
     copyLocation() {
-      if (this.location !== "") {
+      if (this.location) {
         navigator.clipboard.writeText(this.location);
         alert("Location Copied")
       }
